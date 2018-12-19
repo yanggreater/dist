@@ -1,2 +1,0 @@
-webpackJsonp([2],{"5QB9":function(e,n){},xK1C:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var s={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"one"},[this._v("\n    这是第一个公告页面\n")])},staticRenderFns:[]};var r=t("VU/8")({},s,!1,function(e){t("5QB9")},null,null);n.default=r.exports}});
-//# sourceMappingURL=2.d59d4328305c6966b7d8.js.map
