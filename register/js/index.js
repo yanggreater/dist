@@ -12,14 +12,14 @@ window.onload=function(){
                 var vAddress = document.getElementById('address').value;
                 
                 if ((vaccount=="")||(vpassword=="")||(vname=="")||(vemail=="")||(vphone=="")||(vcollege=="")||(vAddress=='')) {
-                alert("请您完善信息");
+                alert("Please improve the information");
                 }else{
                 var data= "account="+vaccount+"&password="+vpassword+"&name="+vname+"&Email="+vemail+"&phone="+vphone+"&college="+vcollege+"&Address="+vAddress;
                 
                     ajax('POST','http://139.199.230.213:3000/register',function(str){
                         alert("register successfully!");
                     },function(str){
-                        alert(str+"提交失败，请重新提交");
+                        alert(str+"Please retry");
                     },data);
                     document.getElementById('account').value = '';
                     document.getElementById('password').value = '';

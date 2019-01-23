@@ -23,7 +23,7 @@
                         // alert(localStorage.getItem('account'));
                         window.location.href='./person.html';
                     }else{
-                        alert('密码错误或用户不存在!');
+                        alert('Password error or user non-existent!');
                     }
                 },function(str){
                     alert('Logon failed, please login again');
@@ -33,13 +33,14 @@
         }
     </script>
     <style>
+        body{
+            background:rgba(255,288,181,.5);
+        }
         .container {
-            margin-top: 50px;
             width: 100%;
             padding: 30px;
             box-sizing: border-box;
             max-width: 600px;
-            background:rgba(255,288,181,.5);
         }
         input {
             border-radius: 5px;
