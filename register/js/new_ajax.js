@@ -8,7 +8,7 @@ function ajax(method,url,fnsuccess,fnfaile,data){
 	}
 	
 	//连接服务器
-	oAjax.open(method,url+"?t="+ Math.random(),true);
+	oAjax.open(method,url,true);
 
 
 
@@ -27,6 +27,7 @@ function ajax(method,url,fnsuccess,fnfaile,data){
 	oAjax.onreadystatechange=function(){
 		if (oAjax.readyState==4) {//如果读取完成，不管是成功还是失败都是完成
 			if(oAjax.status==200){//就是代表成功 状态码为200
+				//console.log(oAjax);
 				fnsuccess(oAjax.responseText);
 			}
 			else{
