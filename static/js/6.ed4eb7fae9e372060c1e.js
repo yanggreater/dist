@@ -1,2 +1,0 @@
-webpackJsonp([6],{GFmd:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"two"},[this._v("\n    第二个公告的页面\n")])},staticRenderFns:[]};var r=n("VU/8")({},s,!1,function(e){n("dFO+")},null,null);t.default=r.exports},"dFO+":function(e,t){}});
-//# sourceMappingURL=6.ed4eb7fae9e372060c1e.js.map
