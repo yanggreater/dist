@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="Author" content="果杨  guoyang@webJohnDoe.cn" />
+        <meta name="Keywords" content="" />
+        <meta name="Description" content="" />
+        <link rel="Shortcut Icon" href="favicon.ico">
+        <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <title>Agricultural Genomics 2017: Functional Genomics toward Green Crops for Sustainable Agriculture</title>
+        <!-- CSS import -->
+        <link href="css/wap_main.css" rel="stylesheet" type="text/css">
+        <style>
+            body,
+            html {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                font-family: "微软雅黑";
+            }
+            #l-map {
+                height: 650px;
+                width: 820px;
+            }
+        </style>
+        <script src="https://api.map.baidu.com/api?v=2.0&ak=954577783a062a2573db29b5b12290fc&s=1"></script>
+    </head>
+
+    <body>
+        <!-- 头部 -->
+        <!-- /.头部 -->
+
+        <!-- 主体 -->
+        <div class="headD"></div>
+        <div class="head">
+            <div class="wal">
+                <h1>Agricultural Genomics 2017</h1>
+                <a href="mobile_0.html" class="btn-1"></a>
+            </div>
+        </div>
+        <div class="wal">
+            <!-- wal -->
+            <div class="pageTitle">Transportation</div>
+            <div class="about">
+                <p>
+                    <b class="txt_darkred">Traffic Info</b>
+                </p>
+                <br/>
+                <div id="bmap" style="overflow:auto;height:350px">
+                    <div id="l-map"></div>
+                </div>
+                <div class="about" style="font-family:Verdana">
+                    <br/>
+                        <h3 class="txt_darkred">Airport</h3>
+                        <h4>Wuhan Tianhe International Airport:</h4>IATA:WUH; ICAO: ZHHH
+                    <br/>
+                    Wuhan Tianhe International Airport, Tianhe Airport Road, Huangpi District, Wuhan, Hubei, 430302, China
+                    <br/>
+                    <a href="http://www.whairport.com/" rel="tag" style="color:tomato" target="_blank">http://www.whairport.com/</a>
+                    <br/></br>
+                    <h3 class="txt_darkred">Taxi</h3>                
+                    From Wuhan Tianhe International Airport to International Academic Exchanging Center, Huazhong Agricultural University 
+                    <br/>
+                        Taxi fare: approx. 20 USD or 138 CNY 
+                    <br/><br/>
+                    <h3 class="txt_darkred">Bus Transportation</h3>
+                    <h4>Airport Shuttle Bus:</h4>
+                    Directions: take the shuttle bus from Wuhan Tianhe International Airport to Wuhan Fujiapo Bus Terminal, then
+                        transfer to taxi to International Academic Exchanging Center, Huazhong Agricultural University
+                    <br/>
+                    Shuttle bus fare: 4.6 USD or 32 CNY
+                    <br/>
+                    Taxi fare: approx. 3.7 USD or 26 CNY
+                    <br/>
+                    <br/>
+                    <h3 class="txt_darkred">Train information</h3>
+                    <h4>Wuhan Metro Line 2:</h4>
+                    Directions: take the metro from Wuhan Tianhe International Airport to Jiedaokou, then transfer to taxi to
+                        International Academic Exchanging Center, Huazhong Agricultural University
+                    <br/>
+                    Metro fare: 1 USD or 7 CNY
+                    <br/>
+                    Taxi fare: approx. 3.0 USD or 21 CNY
+                    <br/>
+                    taxi: ￥79 based on the shortest route
+                    <br/><br/>
+                    
+                </div>
+            </div>
+            <div class="height30"></div>
+            <!-- walEnd -->
+        </div>
+        <!-- /.主体 -->
+
+         <!-- 底部 -->
+         <!-- <div id="foot" style="line-height: 30px;text-align: center;">
+            <p> BUILD WITH &hearts; by Guo Yang </p>
+            <p>
+                <img src="../images/valid-html5exp.png" alt="Valid HTML 4.01 Strict" height="31" width="88">
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+            </p>
+            <p> 
+                Copyright © 2017. guoyang&lt;guoyang@webJohnDoe.cn&gt; All rights reserved. 
+                <br/><a target="_blank" href="http://agconference.hzau.edu.cn">agconference.hzau.edu.cn</a>
+            </p>
+        </div> -->
+        <!-- /.底部 -->
+    </body>
+</html>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("l-map");
+
+    //map.centerAndZoom(new BMap.Point(114.360086,30.481693),14);
+    map.centerAndZoom(new BMap.Point(114.376753, 30.487334), 14);
+
+    var point_hotel = new BMap.Point(114.360086, 30.481693);
+    var point_lab = new BMap.Point(114.361208, 30.478213);
+    //var point_north = new BMap.Point(114.376753,30.487334);
+    var point_south = new BMap.Point(114.36066, 30.477579);
+    //var marker_gate = new BMap.Marker(point_gate);  // 创建标注
+    //map.addOverlay(marker_gate);              // 将标注添加到地图中
+    //map.centerAndZoom(point, 15);
+    //map.centerAndZoom(point_north, 15);//地图中心点偏移校正，以北2门作为中心点以获取中心点为国交	
+    map.centerAndZoom(point_south, 15);
+    var marker_hotel = new BMap.Marker(point_hotel);  // 创建标注
+    map.addOverlay(marker_hotel);
+    var marker_lab = new BMap.Marker(point_lab);  // 创建标注
+    map.addOverlay(marker_lab);
+    //map.centerAndZoom(point, 15);
+
+    var opts = {
+        width: 15,     // 信息窗口宽度
+        height: 10,     // 信息窗口高度
+        title: "国际学术交流中心", // 信息窗口标题
+        enableMessage: false,//设置允许信息窗发送短息
+        message: " ~"
+    }
+    var infoWindow_hotel = new BMap.InfoWindow("TEL:+86-27-87280142", opts);  // 创建信息窗口对象 
+    marker_hotel.addEventListener("click", function () {
+        map.openInfoWindow(infoWindow_hotel, point_hotel); //开启信息窗口
+    });
+
+
+    var opts1 = {
+        position: point_hotel,    // 指定文本标注所在的地理位置
+        offset: new BMap.Size(10, -15)    //设置文本偏移量
+    }
+    var label_hotel = new BMap.Label("International Academic Exchanging Center", opts1);  // 创建文本标注对象
+    label_hotel.setStyle({
+        color: "red",
+        fontSize: "11px",
+        height: "20px",
+        lineHeight: "20px",
+        fontFamily: "微软雅黑"
+    });
+    map.addOverlay(label_hotel);
+
+    var opts2 = {
+        position: point_lab,    // 指定文本标注所在的地理位置
+        offset: new BMap.Size(10, -15)    //设置文本偏移量
+    }
+    var label_lab = new BMap.Label("National Key Laboratory of Crop Genetic Improvement", opts2);  // 创建文本标注对象
+    label_lab.setStyle({
+        color: "red",
+        fontSize: "11px",
+        height: "20px",
+        lineHeight: "20px",
+        fontFamily: "微软雅黑"
+    });
+    map.addOverlay(label_lab);
+
+    var opts3 = {
+        width: 15,     // 信息窗口宽度
+        height: 10,     // 信息窗口高度
+        title: "作物遗传改良国家重点实验室", // 信息窗口标题
+        enableMessage: false,//设置允许信息窗发送短息
+        message: " ~"
+    }
+    var infoWindow_lab = new BMap.InfoWindow("TEL: +86-27-87280016", opts3);  // 创建信息窗口对象 
+    marker_lab.addEventListener("click", function () {
+        map.openInfoWindow(infoWindow_lab, point_lab); //开启信息窗口
+    });
+
+    var polyline1 = new BMap.Polyline([
+        new BMap.Point(114.360086, 30.481693),
+        new BMap.Point(114.360691, 30.481551),
+        new BMap.Point(114.360696, 30.481076),
+        new BMap.Point(114.360848, 30.481029),
+        new BMap.Point(114.360866, 30.480835),
+        new BMap.Point(114.360839, 30.480769),
+        new BMap.Point(114.360741, 30.480722),
+        new BMap.Point(114.360727, 30.479979),
+        new BMap.Point(114.360979, 30.479959),
+        new BMap.Point(114.360934, 30.478162),
+        new BMap.Point(114.361208, 30.478213)
+    ], { strokeColor: "blue", strokeWeight: 6, strokeOpacity: 0.5 });
+
+    map.addOverlay(polyline1);
+
+    var polyline2 = new BMap.Polyline([
+        new BMap.Point(114.360086, 30.481693),
+        new BMap.Point(114.359586, 30.481586),
+        new BMap.Point(114.35946, 30.479975),
+        new BMap.Point(114.360961, 30.479955),
+        new BMap.Point(114.360934, 30.478162),
+        new BMap.Point(114.361208, 30.478213)
+    ], { strokeColor: "red", strokeWeight: 6, strokeOpacity: 0.5 });
+
+    map.addOverlay(polyline2);
+
+    map.enableScrollWheelZoom(true);
+</script>

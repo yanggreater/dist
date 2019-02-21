@@ -1,0 +1,366 @@
+@charset "utf-8";
+/*---- General Defination ----*/
+body {
+    margin:0px; 
+    padding:0px; 
+    font-size:14px; 
+    font-family: 'Open Sans', Arial, Verdana, Helvetice Neue, sans-serif; 
+    color:#333;
+}
+
+a {
+    color:#333; 
+    text-decoration:none; 
+    outline:none;
+}
+
+a:link  {
+    text-decoration: none; 
+    outline:none;
+}
+
+a:visited {
+    text-decoration: none; 
+    outline:none;
+}
+
+a:hover {
+    text-decoration:none; 
+    color:#1c5a97; 
+    outline:none;
+}
+
+ul, p, dl, dt, dd {
+    padding:0px; 
+    margin:0px;
+}
+
+li {
+    list-style-position:outside; 
+    list-style-type:none;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size:14px; 
+    padding:0px; 
+    margin:0px;
+}
+
+h1 {
+    font-size:16px;
+}
+
+h5 {
+    font-size:12px;
+}
+
+.fl {
+    float:left;
+}
+
+.fr {
+    float:right;
+}
+
+.clear {
+    clear:both; 
+    height:0px; 
+    padding:0px; 
+    margin:0px; 
+    display:block; 
+    _display:inherit;
+}
+
+em {
+    font-style:normal;
+}
+
+img {
+    vertical-align:middle;
+}
+
+input, li, a, span, i, em, b, div, img, textarea, p, dl, dt, dd {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+/*---- /.General Defination ----*/
+
+/*-- Useful Function--*/
+.btn1 {/* 返回主页按键 */
+    cursor:pointer;
+}
+
+.txt_green {
+    color: #01ff70;
+}
+
+.txt_darkgreen {
+    color: #3C6850;
+}
+
+.txt_darkred {
+    color: #6E121E;
+}
+
+.txt_tomato {
+    color: #FF6347;
+}
+
+.height30 {
+	height: 30px;
+}
+/*-- /.Useful Function--*/
+
+/* 图片框，用于首页九宫格导航图片背景 */
+.imgDiv img {
+    width:100%;
+}
+
+/* 页面主内容块，parent级别*/
+.wal {
+    max-width:750px; 
+    margin:0px auto;
+}
+
+/* 页面顶栏header部分（返回首页按钮所在） */
+.headD {
+    height:44px;
+}
+
+.head {
+     position: fixed; 
+     z-index:20; 
+     left:0px; 
+     top:0px; 
+     width:100%;
+}
+
+.head .wal {
+    height:44px; 
+    position:relative; 
+    background:#3C6850;
+}
+
+.head h1 {
+    font-weight:400; 
+    color:#FFF; 
+    text-align:center; 
+    line-height:44px;
+}
+
+.head .btn-1 {
+    display:block; 
+    width:44px; 
+    height:44px; 
+    background:url(../img/wap/nimg31.png) center no-repeat; 
+    background-size:15px; 
+    position:absolute; 
+    left:0px; 
+    top:0px;
+}
+
+.nav a {
+    transition:All 0.5s ease;
+    -webkit-transition:All 0.5s ease;
+    -moz-transition:All 0.5s ease;
+    -o-transition:All 0.5s ease;
+}
+
+.radius3, .input1, .textarea, .book .btn1 {
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+
+/* 首页校背景内容块 */
+.indexPart1 {
+    min-height:100px; 
+    position:relative;
+    margin-bottom: 30px;
+}
+.indexPart1 img{
+    height: 100px;
+}
+.indexPart1 .layer {
+    position:absolute; 
+    left:0px; 
+    top:50%; 
+    margin-top:-130px; 
+    width:100%; 
+    text-align:center;
+}
+
+.indexPart1 .img img {
+    width:292px;
+}
+
+.indexPart1 .time {
+    font-size:14px; 
+    padding:6px 0;
+}
+
+/* 首页导航九宫格 */
+.indexNav{
+    padding: 0 20px 0 15px;
+}
+.indexNav li {
+    float:left; 
+    width:30%;
+    margin-left: 10px;
+    margin-bottom: 10px; 
+    text-align:center;
+}
+
+/* .indexNav .li_01 {
+    background:url(../img/wap/nimg250_1.jpg) center no-repeat; 
+    background-size:cover;
+} */
+
+.indexNav .li_01,.indexNav .li_02,.indexNav .li_03,.indexNav .li_04,.indexNav .li_05,.indexNav .li_09,.indexNav .li_06,.indexNav .li_07,.indexNav .li_08{
+    background:#25800e;
+}
+
+/* .indexNav .li_03 {
+    background:url(../img/wap/nimg250_2.jpg) 
+    center no-repeat; 
+    background-size:cover;
+}
+
+.indexNav .li_04 {
+    background:#1e5710;
+}
+
+.indexNav .li_05 {
+    background:url(../img/wap/nimg250_3.jpg) 
+    center no-repeat; 
+    background-size:cover;
+}
+
+.indexNav .li_06 {
+    background:#1e5710;
+}
+
+.indexNav .li_07 {
+    background:url(../img/wap/nimg250_4.jpg) 
+    center no-repeat; 
+    background-size:cover;
+}
+
+.indexNav .li_08 {
+    background:#1e5710;
+}
+
+.indexNav .li_09 {
+    background:#1e5710;
+    background-size:cover;
+} */
+
+.indexNav a {
+    display:block; 
+    height:105px; 
+    text-align:center; 
+    color:#FFF; 
+    font-size:14px;
+}
+
+.indexNav a div {
+    padding:25px 0 8px 0;
+}
+
+.indexNav a img {
+    width:36px;
+    height: 30px;
+}
+
+/* 页首的标题栏 */
+.pageTitle {
+    text-align:center; 
+    line-height:50px; 
+    font-size:18px; 
+    font-weight:bold;
+    border-bottom:#dfdfdf solid 1px; 
+    position:relative; 
+    top:1px;
+}
+
+/* wal元素中的文字块0，带<dd>元素 */
+.notice li {
+    padding:10px 15px;  
+    min-height:30px;
+}
+
+.notice h5 {
+    font-size:16px; 
+    padding:5px 0 6px 0;
+}
+
+.notice dd {
+    color:#666; 
+    font-size:15px; 
+    min-height:23px; 
+    line-height:23px; 
+    position:relative; 
+    padding:0 0 3px 6em;
+}
+
+.notice dd em {
+    position:absolute; 
+    left:0px; 
+    top:0px;
+}
+
+.notice .li_01 dd {
+    float:left; 
+    padding:0 1.5em 0 0;
+}
+
+/* wal元素中的文字块1，带<li>元素 */
+.report {
+    padding:15px; 
+    color:#434343;
+}
+
+.report li {
+    font-size:16px; 
+    line-height:1.5em; 
+    padding:3px 0;
+}
+
+.report li b {
+    padding-right:0.5em;
+}
+
+/* wal元素中的文字块2，文字占主要内容时使用 */
+.about {
+    padding:10px 15px; 
+    font-size: 16px;
+    color:#434343; 
+    line-height: 180%;
+}
+
+.about h5 {
+     font-size:15px; 
+     padding:10px 0 10px 0;
+}
+
+/* 会议时间表表格 */
+.meetingTable {}
+
+.meetingTable p {
+    text-indent: 0em;
+    margin-bottom: 0;
+}
+
+.meetingTable b {
+    color: #107CB6;
+}
+
+.meetingTable .r {
+    color: #D90000;
+}
+
+.meetingTable .g {
+    color: rgb(42, 138, 29);
+}
+
