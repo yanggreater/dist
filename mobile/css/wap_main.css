@@ -203,7 +203,7 @@ input, li, a, span, i, em, b, div, img, textarea, p, dl, dt, dd {
 
 /* 首页导航九宫格 */
 /* .indexNav{
-    padding: 0 20px 0 15px;
+    margin: 0 auto;
 } */
 .indexNav li {
     float:left; 
