@@ -6,6 +6,7 @@ body {
     font-size:14px; 
     font-family: 'Open Sans', Arial, Verdana, Helvetice Neue, sans-serif; 
     color:#333;
+    
 }
 
 a {
@@ -201,14 +202,15 @@ input, li, a, span, i, em, b, div, img, textarea, p, dl, dt, dd {
 }
 
 /* 首页导航九宫格 */
-.indexNav{
+/* .indexNav{
     padding: 0 20px 0 15px;
-}
+} */
 .indexNav li {
     float:left; 
-    width:30%;
-    margin-left: 10px;
-    margin-bottom: 10px; 
+    width:24%;
+    height: 90px;
+    margin-left: 25px;
+    margin-bottom: 30px; 
     text-align:center;
 }
 
@@ -218,7 +220,7 @@ input, li, a, span, i, em, b, div, img, textarea, p, dl, dt, dd {
 } */
 
 .indexNav .li_01,.indexNav .li_02,.indexNav .li_03,.indexNav .li_04,.indexNav .li_05,.indexNav .li_09,.indexNav .li_06,.indexNav .li_07,.indexNav .li_08{
-    background:#25800e;
+    background:#2b7917e3;
 }
 
 /* .indexNav .li_03 {
@@ -265,7 +267,7 @@ input, li, a, span, i, em, b, div, img, textarea, p, dl, dt, dd {
 }
 
 .indexNav a div {
-    padding:25px 0 8px 0;
+    padding:18px 0 8px 0;
 }
 
 .indexNav a img {
