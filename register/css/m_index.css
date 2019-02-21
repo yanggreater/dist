@@ -31,7 +31,7 @@ body {
   flex-wrap: wrap;
 }
 /*  */
-input {
+.exp input {
   border-radius: 5px;
   border: 1px solid #ddd;
   padding: 0 10px;
