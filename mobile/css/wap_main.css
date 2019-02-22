@@ -202,7 +202,31 @@ input, li, a, span, i, em, b, div, img, textarea, p, dl, dt, dd {
 }
 
 /* 首页导航九宫格 */
-
+.indexNav li {
+    float:left; 
+    width:24%;
+    height: 90px;
+    margin-left: 25px;
+    margin-bottom: 30px; 
+    text-align:center;
+}
+.indexNav .li_01,.indexNav .li_02,.indexNav .li_03,.indexNav .li_04,.indexNav .li_05,.indexNav .li_09,.indexNav .li_06,.indexNav .li_07,.indexNav .li_08{
+    background:#297416e3;
+}
+.indexNav a {
+    display:block; 
+    height:105px; 
+    text-align:center; 
+    color:#FFF; 
+    font-size:14px;
+}
+.indexNav a div {
+    padding:18px 0 8px 0;
+}
+.indexNav a img {
+    width:36px;
+    height: 30px;
+}
 
 /* 页首的标题栏 */
 .pageTitle {
